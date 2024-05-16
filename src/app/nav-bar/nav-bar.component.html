@@ -1,0 +1,23 @@
+<div class="NavBar">
+  <div class="logo">
+    <img src="./assets/icons/avocado.png" height="50px" width="50px" alt="">
+    Garden.IO
+  </div>
+
+  <ul class="menuList">
+    <li><a (click)="onNavigate('home',0)" [class.active]="currentSection === 0" [class.inactive]="currentSection !== 0">Home</a></li>
+    <li><a (click)="onNavigate('about',1)" [class.active]="currentSection === 1" [class.inactive]="currentSection !== 1">About</a></li>
+    <li><a (click)="onNavigate('products',2)" [class.active]="currentSection === 2" [class.inactive]="currentSection !== 2">Products</a></li>
+    <li><a (click)="onNavigate('reviews',3)" [class.active]="currentSection === 3" [class.inactive]="currentSection !== 3">Reviews</a></li>
+    <li><a (click)="onNavigate('contact',4)" [class.active]="currentSection === 4" [class.inactive]="currentSection !== 4">Contact</a></li>
+  </ul>
+  
+
+
+  
+  <div class="SingInUp">
+    Login / Sign Up
+  </div>
+
+
+</div>

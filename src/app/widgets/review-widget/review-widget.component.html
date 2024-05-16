@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="quote">
+        ''
+    </div>
+    <li class="review">
+
+        <div class="reviewText">
+            {{review}}
+        </div>
+    
+       <div class="reviewer">
+        {{reviewer}}
+       </div>
+           
+        
+    
+       <div class="row">
+        <div class="profile-avatar">
+            <img src="{{imageProfile}}" alt="Random Avatar" id="avatar">
+        </div>
+    
+        <div class="stars" *ngFor="let strr of [0,0,0,0,0];let i = index" >
+            <div class="star" *ngIf="i+1<=rating">
+                ⭐
+            </div>
+        </div>
+    
+        <div class="rating">
+            {{rating}}/5
+        </div>
+       
+       </div>
+    </li>
+     
+</div>

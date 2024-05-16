@@ -1,0 +1,84 @@
+.container {
+    height: 100%;
+    position: relative; /* Required for absolute positioning of children */
+    max-width: 100%;
+    background-color: #E5E4E2;
+    border-radius: 24px;
+    overflow: hidden; /* Ensures no overflow content is visible outside the container */
+}
+
+.quote {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    font-size: 13rem;
+    font-weight: bold;
+    color: var(--dark-green);
+    opacity: 0.7;
+    z-index: 0; /* Places the quote behind other content */
+}
+
+.review {
+    position: relative; /* Ensures stacking context starts anew */
+    z-index: 1; /* Higher than the quote */
+    height: 100%;
+    max-width: 100%;
+    
+    border-radius: 24px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* .review{
+    height: 100%;
+    
+    max-width: 100%;
+    background-color: #E5E4E2;
+    border-radius: 24px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+
+.reviewText{
+    max-width: 100%;
+    font-size: 1.25rem;
+    font-weight:600;
+    margin: 10px;
+}
+
+.reviewer{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin: 10px;
+}
+
+.profile-avatar img {
+    width: 75px;      /* Set the desired width */
+    height: 75px;     /* Ensure the height is the same as the width */
+    border-radius: 50%; /* This creates the circular shape */
+    object-fit: cover;  /* Ensures the image covers the space without distortion */
+}
+
+
+.row{
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+}
+
+.rating{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.star {
+    display: inline-block;
+    color: gold;
+    font-size: 24px; /* Large size for better visibility */
+    margin-right: 5px; /* Space between stars */
+    margin-left: 5px;
+}

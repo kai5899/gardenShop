@@ -1,0 +1,11 @@
+.icon{
+    position: absolute;
+    /* bottom: 75px;
+    left: 40px; */
+
+    /* rotate: -5.5rad; */
+}
+.icon img{
+    width: 50vh;
+    height: 50vh;
+}

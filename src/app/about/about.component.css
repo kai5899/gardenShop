@@ -1,0 +1,47 @@
+.fullAbout{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.aboutHeader{
+    margin: 15%;
+    margin-top: 10vh;
+    display: flex;
+    /* gap: 20vw; */
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.e1{
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--dark-green);
+}
+
+.e2{
+    width: 50%;
+    font-size: 22px;
+    color: black
+}
+
+.aboutVideo{
+    width: 50vw;
+    height: 50%;
+    border-radius: 28px;
+}
+
+.aboutVideo iframe{
+    width: 100%;
+    height: 100%;
+    display: block; /* Removes any default inline-frame spacing */
+    border: none;
+    border-radius: 28px;
+}

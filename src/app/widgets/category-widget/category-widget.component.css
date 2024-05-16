@@ -1,0 +1,32 @@
+.catWidget{
+    display: inline-block;
+    height: 40px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--dark-green);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 24px;
+    color: white;
+}
+
+.notSelected {
+    display: inline-block;
+    height: 40px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 24px;
+    color: var(--dark-green);
+}
+
+
+.catWidget:hover{
+    cursor: pointer;
+}

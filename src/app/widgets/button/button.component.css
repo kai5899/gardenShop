@@ -1,0 +1,19 @@
+.button{
+    width: 240px;
+    height: 80px;
+    padding: 20px;
+    border-radius: 18px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--light-green);
+    transition: 300ms;
+}
+
+.button:hover{
+    cursor: pointer;
+    opacity: 0.4;
+    transition: 300ms;
+}

@@ -1,0 +1,64 @@
+.grid-item {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+  }
+.imagePlate{
+  width: 75%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E5E4E2;
+  border-radius: 25px;
+
+}
+.imagePlate :hover{
+  cursor: pointer;
+}
+.imagePlate  img {
+    height: 100%;
+    width: 50%;
+    object-fit: fill;
+}
+
+
+.productName{
+  font-weight: bold;
+  width: 80%;
+  font-size: 1.5rem;
+}
+
+.productPrice{
+  padding: 10px;
+}
+
+.lastRow{
+  width: 88%;
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.plustButton{
+  width: 30px;
+  height: 30px;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  background-color: var(--dark-green);
+}
+
+.plustButton:hover{
+  cursor: pointer;
+}

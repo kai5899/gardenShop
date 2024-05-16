@@ -1,0 +1,35 @@
+<div class="fullProducts">
+
+
+    <div class="browseProducts">
+
+        <div class="browseTitle"> Browse Product</div>
+
+        <div class="browseBody">
+
+            <div class="categoriesMenu">
+                <div *ngFor="let caty of categoriesList ; let isFirst =first">
+                    <app-category-widget [txt]="caty" [isSelected]="isFirst"></app-category-widget>
+                </div>
+               
+            </div>
+
+            <div class="productsSpace">
+                <div class="grid-view">
+                   <div *ngFor="let item of productsList">
+
+                    <app-productwidget [name]="item.name"  [image] = "item.image" [price]="item.price"></app-productwidget>
+                   </div>
+
+                  
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+   
+
+
+</div>

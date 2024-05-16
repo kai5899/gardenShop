@@ -1,0 +1,100 @@
+/* General styling for the navigation bar */
+.NavBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.logo {
+    margin: 5px;
+    font-size: 2rem;
+    gap: 3px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styling for the menu list */
+.menuList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    gap: 30px;
+}
+
+/* Base styles for all links */
+.menuList li a {
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    overflow: hidden;  /* Keeps pseudo-elements contained */
+    transition: color 0.3s;  /* Smooth color transition */
+    color: black;  /* Default text color */
+}
+
+.menuList li:hover {
+ cursor: pointer;
+}
+
+/* Underline styles, initially hidden */
+.menuList li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;  /* Start at the top */
+    height: 2px;
+    background-color: var(--light-green);  /* Default color for the underline */
+    transform: translateY(-300%);  /* Start hidden above the text */
+    transition: transform 0.3s ease;  /* Animation timing */
+}
+
+/* Active link styles */
+.menuList li a.active {
+    color: var(--light-green);  /* Active text color */
+    font-weight: bold;
+}
+
+.menuList li a.active::after {
+    transform: translateY(1000%);  /* Underline visible at text bottom */
+    background-color: var(--light-green);  /* Underline color for active links */
+}
+
+/* Hover styles for inactive links */
+.menuList li a:not(.active):hover {
+    color: var(--light-green);  /* Hover text color */
+    font-weight: bold;
+}
+
+.menuList li a:not(.active):hover::after {
+    transform: translateY(1000%);  /* Slides the underline into view from the top to the bottom */
+}
+
+/* Styles for the Sign Up/Log In section */
+.SingInUp {
+    margin: 5px;
+    border: 2px solid black;
+    padding: 15px;
+    border-radius: 18px;
+    transition: background-color 300ms, color 300ms;
+    font-weight: bold;
+}
+
+.SingInUp:hover {
+    cursor: pointer;
+    background-color: var(--dark-green);
+    color: white;
+    border: 2px solid var(--dark-green);
+}
+
